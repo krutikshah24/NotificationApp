@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IEmailNotification\EmailNotification.csproj" />
+    <ProjectReference Include="..\ISMSNotification\SmsNotification.csproj" />
+    <ProjectReference Include="..\ISMTPEmailNotification\EmailNotification.SMTP.csproj" />
+    <ProjectReference Include="..\SmsNotification.Twilio\SmsNotification.Twilio.csproj" />
+  </ItemGroup>
+
+</Project>
